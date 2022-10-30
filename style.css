@@ -73,6 +73,7 @@ button {
 
 /* Task */
 .task {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,12 +100,20 @@ button {
 
 .task__checkbox {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .task__label {
-  padding-left: 10px;
+  max-width: 76%;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
   font-size: 18px;
-  flex-grow: 1;
+  cursor: pointer;
+}
+
+.task__text {
+  padding: 0 10px;
 }
 
 /* Edit task mode */
@@ -113,6 +122,10 @@ button {
 }
 
 .task_edit-mode .task__label {
+  flex-grow: 0;
+}
+
+.task_edit-mode .task__text {
   display: none;
 }
 
@@ -126,7 +139,7 @@ button {
 }
 
 /* Completed task */
-.task_completed .task__label {
+.task_completed .task__text {
   text-decoration: line-through;
   color: #888;
 }

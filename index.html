@@ -26,8 +26,10 @@
     <h3 class="subtitle">Todo</h3>
     <ul id="incomplete-tasks" class="tasks-list">
       <li class="tasks-list__item task">
-        <input type="checkbox" class="task__checkbox">
-        <label class="task__label">Pay Bills</label>
+        <label class="task__label">
+          <input type="checkbox" class="task__checkbox">
+          <span class="task__text">Pay Bills</span>
+        </label>
         <input type="text" class="task__input">
         <button class="button js-edit-btn">Edit</button>
         <button class="button button_delete js-delete-btn">
@@ -35,8 +37,10 @@
         </button>
       </li>
       <li class="tasks-list__item task task_edit-mode">
-        <input type="checkbox" class="task__checkbox">
-        <label class="task__label">Go Shopping</label>
+        <label class="task__label">
+          <input type="checkbox" class="task__checkbox">
+          <span class="task__text">Go Shopping</span>
+        </label>
         <input type="text" value="Go Shopping" class="task__input">
         <button class="button js-edit-btn">Save</button>
         <button class="button button_delete js-delete-btn">
@@ -47,8 +51,10 @@
     <h3 class="subtitle">Completed</h3>
     <ul id="completed-tasks" class="tasks-list">
       <li class="tasks-list__item task task_completed">
-        <input type="checkbox" class="task__checkbox" checked>
-        <label class="task__label">See the Doctor</label>
+        <label class="task__label">
+          <input type="checkbox" class="task__checkbox" checked>
+          <span class="task__text">See the Doctor</span>
+        </label>
         <input type="text" class="task__input">
         <button class="button js-edit-btn">Edit</button>
         <button class="button button_delete js-delete-btn">
